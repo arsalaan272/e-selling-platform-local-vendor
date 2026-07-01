@@ -1,0 +1,63 @@
+# ==========================================
+# 1. OS & System Files (Generic)
+# ==========================================
+.DS_Store
+Thumbs.db
+*.log
+*.local
+
+# ==========================================
+# 2. Python / FastAPI Backend Specifics
+# ==========================================
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python caching & bytecode
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Poetry, Pipenv, or environment dependency artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# 3. Node / Frontend Specifics (Next.js / React)
+# ==========================================
+# Dependencies
+**/node_modules/
+
+# Next.js build output
+**/.next/
+**/out/
+
+# Production builds (CRA / Vite / Nuxt)
+**/dist/
+**/build/
+
+# IDE / Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ==========================================
+# 4. CRITICAL: Security & Environment Keys
+# ==========================================
+# Never commit your database credentials, JWT secrets, or API keys!
+**/.env
+**/.env.local
+**/.env.production
+**/.env.development
+**/.env.*.local
+**/config.py (if containing raw secrets)
